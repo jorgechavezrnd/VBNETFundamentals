@@ -3,20 +3,21 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        ' Display the total number of items in the List
-        Console.WriteLine(products.Count)
+        ' Display the sum of all list prices
+        Console.WriteLine(
+            products.Sum(Function(p) p.ListPrice).ToString("c"))
 
-        ' Remove an item by index
-        products.RemoveAt(1)
-        Console.WriteLine(products.Count)
+        ' Display the average of all list prices
+        Console.WriteLine(
+            products.Average(Function(p) p.ListPrice).ToString("c"))
 
-        ' Remove an item by a product object
-        products.Remove(products.Find(Function(p) p.ProductID = 708))
-        Console.WriteLine(products.Count)
+        ' Display the minimum of all list prices
+        Console.WriteLine(
+            products.Min(Function(p) p.ListPrice).ToString("c"))
 
-        ' Remove all items
-        products.Clear()
-        Console.WriteLine(products.Count)
+        ' Display the maximum of all list prices
+        Console.WriteLine(
+            products.Max(Function(p) p.ListPrice).ToString("c"))
 
         Console.ReadKey()
     End Sub
