@@ -3,20 +3,23 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        ' See if a specific key exists in the dictionary
-        Console.WriteLine(products.ContainsKey(1))
-        Console.WriteLine(products.ContainsKey(99))
+        ' Display the sum of all list prices
+        Console.WriteLine(
+            products.Sum(Function(p)
+                             Return p.Value.ListPrice
+                         End Function).ToString("c"))
 
-        ' Display the total number of items in the dictionary
-        Console.WriteLine(products.Count)
+        ' Display the average of all list prices
+        Console.WriteLine(
+            products.Average(Function(p) p.Value.ListPrice).ToString("c"))
 
-        ' Remove an item by the key
-        products.Remove(1)
-        Console.WriteLine(products.Count)
+        ' Display the minimum of all list prices
+        Console.WriteLine(
+            products.Min(Function(p) p.Value.ListPrice).ToString("c"))
 
-        ' Remove all items
-        products.Clear()
-        Console.WriteLine(products.Count)
+        ' Display the maximum of all list prices
+        Console.WriteLine(
+            products.Max(Function(p) p.Value.ListPrice).ToString("c"))
 
         Console.ReadKey()
     End Sub
