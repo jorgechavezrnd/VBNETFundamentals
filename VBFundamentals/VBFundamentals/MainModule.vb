@@ -3,15 +3,20 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        Console.WriteLine(products(0).Name)
-        Console.WriteLine(products(1).Name)
-        Console.WriteLine(products(2).Name)
+        ' Display the total number of items in the List
+        Console.WriteLine(products.Count)
 
-        ' See if a specific key exists in the list
-        Console.WriteLine(
-            products.Exists(Function(p) p.ProductID = 706))
-        Console.WriteLine(
-            products.Exists(Function(p) p.ProductID = 99))
+        ' Remove an item by index
+        products.RemoveAt(1)
+        Console.WriteLine(products.Count)
+
+        ' Remove an item by a product object
+        products.Remove(products.Find(Function(p) p.ProductID = 708))
+        Console.WriteLine(products.Count)
+
+        ' Remove all items
+        products.Clear()
+        Console.WriteLine(products.Count)
 
         Console.ReadKey()
     End Sub
