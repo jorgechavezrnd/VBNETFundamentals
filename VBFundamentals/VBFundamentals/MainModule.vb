@@ -1,21 +1,13 @@
 ﻿Module MainModule
     Sub Main()
-        Dim prod As New Product With {
-            .ProductID = 700,
-            .Name = "10 Speed Bike",
-            .ProductNumber = "10-SP"
-        }
+        Dim products As String() =
+            {"10 Speed Bike", "Bike Helmet", "Inner Tube"}
 
-        Console.WriteLine(prod.ToString())
+        Console.WriteLine(products(0))
+        Console.WriteLine(products(1))
+        Console.WriteLine(products(2))
 
-        Dim cust As New Customer With {
-            .CustomerID = 1,
-            .CompanyName = "Beach Computer Consulting",
-            .FirstName = "Bruce",
-            .LastName = "Jones"
-        }
-
-        Console.WriteLine(cust.ToString())
+        Console.WriteLine(products.Length)
 
         Console.ReadKey()
     End Sub
