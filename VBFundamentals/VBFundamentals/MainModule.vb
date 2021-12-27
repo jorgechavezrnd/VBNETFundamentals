@@ -3,7 +3,7 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        For index As Integer = 0 To (products.Count - 1)
+        For index As Integer = (products.Count - 1) To 0 Step -1
             Console.WriteLine(products(index).ToString())
         Next
 
