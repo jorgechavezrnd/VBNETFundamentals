@@ -11,6 +11,9 @@
                     Console.WriteLine("Size L: " & products(index).Name)
                 Case "M"
                     Console.WriteLine("Size M: " & products(index).Name)
+                Case Else
+                    Console.WriteLine(products(index).Name _
+                                      & " has size " & products(index).Size)
             End Select
         Next
 
