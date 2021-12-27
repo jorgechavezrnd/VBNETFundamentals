@@ -9,6 +9,8 @@
             Console.WriteLine(products(index).ToString())
             sum += products(index).ListPrice
 
+            Exit Do
+
             index += 1
         Loop While index < (products.Count)
 
