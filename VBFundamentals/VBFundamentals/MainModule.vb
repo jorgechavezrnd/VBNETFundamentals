@@ -7,6 +7,9 @@
             If products(index).Color = "Red" Then
                 Console.WriteLine("Red color product: " _
                                   & products(index).ToString())
+            Else
+                Console.WriteLine("Other color product: " _
+                                  & products(index).ToString())
             End If
         Next
 
