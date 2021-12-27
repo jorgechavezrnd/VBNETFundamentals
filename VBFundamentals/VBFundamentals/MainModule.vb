@@ -5,6 +5,8 @@
 
         For Each prod As Product In products
             Console.WriteLine(prod.ToString())
+
+            Exit For
         Next
 
         Console.ReadKey()
