@@ -11,6 +11,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdventureWorks.EntityLayer"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdventureWorks.ViewModelLayer", "AdventureWorks.ViewModelLayer\AdventureWorks.ViewModelLayer.vbproj", "{54A9FE72-203C-40FC-8FC0-530B3747FF22}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdventureWorks.DataLayer", "AdventureWorks.DataLayer\AdventureWorks.DataLayer.vbproj", "{D54F75F1-7E8E-4B2D-9D2F-3E1B98589FBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{54A9FE72-203C-40FC-8FC0-530B3747FF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54A9FE72-203C-40FC-8FC0-530B3747FF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54A9FE72-203C-40FC-8FC0-530B3747FF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54F75F1-7E8E-4B2D-9D2F-3E1B98589FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54F75F1-7E8E-4B2D-9D2F-3E1B98589FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54F75F1-7E8E-4B2D-9D2F-3E1B98589FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54F75F1-7E8E-4B2D-9D2F-3E1B98589FBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
