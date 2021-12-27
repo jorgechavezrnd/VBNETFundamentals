@@ -2,32 +2,68 @@
 <Customers>
 	<Customer>
 		<CustomerID>1</CustomerID>
-		<FirstName>Bruce</FirstName>
-		<LastName>Jones</LastName>
-		<CompanyName>Beach Computer Consultants</CompanyName>
+		<FirstName>Orlando</FirstName>
+		<LastName>Gee</LastName>
+		<CompanyName>A Bike Store</CompanyName>
 	</Customer>
 	<Customer>
 		<CustomerID>2</CustomerID>
-		<FirstName>Jose</FirstName>
-		<LastName>Tordoya</LastName>
-		<CompanyName>MSI Laptop Consultants</CompanyName>
+		<FirstName>Keith</FirstName>
+		<LastName>Harris</LastName>
+		<CompanyName>Progressive Sports</CompanyName>
 	</Customer>
 	<Customer>
 		<CustomerID>3</CustomerID>
-		<FirstName>Samuel</FirstName>
-		<LastName>Camacho</LastName>
-		<CompanyName>Apple Mac Consultants</CompanyName>
+		<FirstName>Donna</FirstName>
+		<LastName>Carreras</LastName>
+		<CompanyName>Advanced Bike Components</CompanyName>
 	</Customer>
 	<Customer>
 		<CustomerID>4</CustomerID>
-		<FirstName>Kevin</FirstName>
-		<LastName>Valverde</LastName>
-		<CompanyName>Samsung Mobile Consultants</CompanyName>
+		<FirstName>Janet</FirstName>
+		<LastName>Gates</LastName>
+		<CompanyName>Modular Cycles Systems</CompanyName>
 	</Customer>
 	<Customer>
 		<CustomerID>5</CustomerID>
-		<FirstName>Alvaro</FirstName>
-		<LastName>Vargas</LastName>
-		<CompanyName>LG TV Consultants</CompanyName>
+		<FirstName>Lucy</FirstName>
+		<LastName>Harrington</LastName>
+		<CompanyName>Metropolitan Sports Supply</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>6</CustomerID>
+		<FirstName>Rosmarie</FirstName>
+		<LastName>Carroll</LastName>
+		<CompanyName>Aerobic Exercise Company</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>7</CustomerID>
+		<FirstName>Dominic</FirstName>
+		<LastName>Gash</LastName>
+		<CompanyName>Associated Bikes</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>10</CustomerID>
+		<FirstName>Kathleen</FirstName>
+		<LastName>Garza</LastName>
+		<CompanyName>Rural Cycle Emporium</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>11</CustomerID>
+		<FirstName>Katherine</FirstName>
+		<LastName>Harding</LastName>
+		<CompanyName>Sharp Bikes</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>12</CustomerID>
+		<FirstName>Johny</FirstName>
+		<LastName>Caprio</LastName>
+		<CompanyName>Bikes and Motorbikes</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>16</CustomerID>
+		<FirstName>Christopher</FirstName>
+		<LastName>Beck</LastName>
+		<CompanyName>Bulk Discount Store</CompanyName>
 	</Customer>
 </Customers>
