@@ -3,8 +3,8 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        For index As Integer = (products.Count - 1) To 0 Step -1
-            Console.WriteLine(products(index).ToString())
+        For Each prod As Product In products
+            Console.WriteLine(prod.ToString())
         Next
 
         Console.ReadKey()
