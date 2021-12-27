@@ -3,10 +3,11 @@
     Sub Main()
         Dim products = LoadProducts()
 
-        For Each prod As Product In products
-            Console.WriteLine(prod.ToString())
-
-            Exit For
+        For index As Integer = 0 To (products.Count - 1)
+            If products(index).Color = "Red" Then
+                Console.WriteLine("Red color product: " _
+                                  & products(index).ToString())
+            End If
         Next
 
         Console.ReadKey()
