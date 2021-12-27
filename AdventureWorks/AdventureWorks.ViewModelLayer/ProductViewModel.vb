@@ -31,8 +31,13 @@ Public Class ProductViewModel
     End Function
 
     Function LoadProduct(ByVal productId As Integer, ByVal startingFilePath As String) As Product
-        ' Hard-code an entity
-        Entity = New Product() With {.ProductID = 680, .Name = "HL Road Frame - Black, 58", .ProductNumber = "FR-R92B-58", .Color = "Black", .Size = "58", .Weight = 1016.04D, .StandardCost = 1059.31D, .ListPrice = 1431.5D, .SellStartDate = #06/01/1998#, .SellEndDate = #12/31/2021#}
+        ' Create a new instance of the product manager class
+        Dim mgr = New ProductManager
+
+        Entity = mgr.LoadProduct(productId, startingFilePath)
+
+        ' Inform UI that the Entity property changed
+        RaisePropertyChanged("Entity")
 
         Return Entity
     End Function

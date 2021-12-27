@@ -1,4 +1,7 @@
-﻿Public Class CommonBase
+﻿Imports System.ComponentModel
+
+Public Class CommonBase
+    Implements INotifyPropertyChanged
 
     Sub New()
         IsActive = True
@@ -9,6 +12,12 @@
     Public Property IsActive As Boolean
     Public Property ModifiedDate As DateTime
     Public Property CreatedBy As String
+
+    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+    Sub RaisePropertyChanged(ByVal propertyName As String)
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+    End Sub
 
     Public Overrides Function ToString() As String
         Return GetClassData()
