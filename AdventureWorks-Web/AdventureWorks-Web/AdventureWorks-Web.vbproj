@@ -192,6 +192,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Xml\Customers.xml" />
+    <Content Include="Xml\Products.xml" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -230,8 +232,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Views\_ViewStart.vbhtml" />
-    <Content Include="Views\Home\About.vbhtml" />
-    <Content Include="Views\Home\Contact.vbhtml" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
@@ -240,6 +240,24 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AdventureWorks\AdventureWorks.DataLayer\AdventureWorks.DataLayer.vbproj">
+      <Project>{d54f75f1-7e8e-4b2d-9d2f-3e1b98589fbd}</Project>
+      <Name>AdventureWorks.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AdventureWorks\AdventureWorks.EntityLayer\AdventureWorks.EntityLayer.vbproj">
+      <Project>{5b68842c-09c3-484c-8038-852efb25d9ec}</Project>
+      <Name>AdventureWorks.EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AdventureWorks\AdventureWorks.ViewModelLayer\AdventureWorks.ViewModelLayer.vbproj">
+      <Project>{54a9fe72-203c-40fc-8fc0-530b3747ff22}</Project>
+      <Name>AdventureWorks.ViewModelLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AdventureWorks\Common.Library\Common.Library.vbproj">
+      <Project>{bb4ca8a1-a106-4785-a92e-3f10ca67efcd}</Project>
+      <Name>Common.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
