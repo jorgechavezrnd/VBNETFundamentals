@@ -5,12 +5,12 @@
         Dim index As Integer = 0
         Dim sum As Decimal = 0
 
-        Do While index < (products.Count - 1)
+        Do
             Console.WriteLine(products(index).ToString())
             sum += products(index).ListPrice
 
             index += 1
-        Loop
+        Loop While index < (products.Count)
 
         Console.WriteLine("Sum: " + sum.ToString("c"))
 
