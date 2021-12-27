@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+	<Customer>
+		<CustomerID>1</CustomerID>
+		<FirstName>Bruce</FirstName>
+		<LastName>Jones</LastName>
+		<CompanyName>Beach Computer Consultants</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>2</CustomerID>
+		<FirstName>Jose</FirstName>
+		<LastName>Tordoya</LastName>
+		<CompanyName>MSI Laptop Consultants</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>3</CustomerID>
+		<FirstName>Samuel</FirstName>
+		<LastName>Camacho</LastName>
+		<CompanyName>Apple Mac Consultants</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>4</CustomerID>
+		<FirstName>Kevin</FirstName>
+		<LastName>Valverde</LastName>
+		<CompanyName>Samsung Mobile Consultants</CompanyName>
+	</Customer>
+	<Customer>
+		<CustomerID>5</CustomerID>
+		<FirstName>Alvaro</FirstName>
+		<LastName>Vargas</LastName>
+		<CompanyName>LG TV Consultants</CompanyName>
+	</Customer>
+</Customers>
