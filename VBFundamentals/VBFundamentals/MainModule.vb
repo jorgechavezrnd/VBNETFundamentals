@@ -3,18 +3,20 @@
     Sub Main()
         Dim products = LoadProducts()
         Dim index As Integer = 0
-        Dim sum As Decimal = 0
+        Dim min As Decimal = Decimal.MaxValue
 
-        Do
+        Do Until index > (products.Count - 1)
             Console.WriteLine(products(index).ToString())
-            sum += products(index).ListPrice
 
-            Exit Do
+            min = Convert.ToDecimal(
+                IIf(products(index).ListPrice < min,
+                    products(index).ListPrice,
+                    min))
 
             index += 1
-        Loop While index < (products.Count)
+        Loop
 
-        Console.WriteLine("Sum: " + sum.ToString("c"))
+        Console.WriteLine("Min: " & min.ToString("c"))
 
         Console.ReadKey()
     End Sub
