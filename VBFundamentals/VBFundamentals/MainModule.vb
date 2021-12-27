@@ -4,16 +4,14 @@
         Dim products = LoadProducts()
 
         For index As Integer = 0 To (products.Count - 1)
-            If products(index).Color = "Red" Then
-                Console.WriteLine("Red color product: " _
-                                  & products(index).ToString())
-            ElseIf products(index).Color = "Black" Then
-                Console.WriteLine("Black color product: " _
-                                  & products(index).ToString())
-            Else
-                Console.WriteLine("Other color product: " _
-                                  & products(index).ToString())
-            End If
+            Select Case products(index).Size
+                Case "58"
+                    Console.WriteLine("Size 58: " & products(index).Name)
+                Case "L"
+                    Console.WriteLine("Size L: " & products(index).Name)
+                Case "M"
+                    Console.WriteLine("Size M: " & products(index).Name)
+            End Select
         Next
 
         Console.ReadKey()
