@@ -22,7 +22,9 @@ End Code
         @<tbody>
             <tr>
                 <td>@product.ProductID</td>
-                <td>@product.Name</td>
+                <td>
+                    @Html.ActionLink(product.Name, "ProductDetail", New With {.id = product.ProductID})
+                </td>
                 <td>@product.ProductNumber</td>
                 <td>@product.Color</td>
                 <td>@product.Size</td>
