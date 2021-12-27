@@ -2,21 +2,10 @@
 
     Sub Main()
         Dim products = LoadProducts()
-        Dim index As Integer = 0
-        Dim max As Decimal = Decimal.MinValue
 
-        Do
+        For index As Integer = 0 To (products.Count - 1)
             Console.WriteLine(products(index).ToString())
-
-            max = Convert.ToDecimal(
-                IIf(products(index).ListPrice > max,
-                    products(index).ListPrice,
-                    max))
-
-            index += 1
-        Loop Until index > (products.Count - 1)
-
-        Console.WriteLine("Max: " & max.ToString("c"))
+        Next
 
         Console.ReadKey()
     End Sub
