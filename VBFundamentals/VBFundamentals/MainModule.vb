@@ -2,22 +2,17 @@
 
     Sub Main()
         Dim products = LoadProducts()
+        Dim index As Integer = 0
+        Dim sum As Decimal = 0
 
-        ' Display the sum of all list prices
-        Console.WriteLine(
-            products.Sum(Function(p) p.ListPrice).ToString("c"))
+        Do While index < (products.Count - 1)
+            Console.WriteLine(products(index).ToString())
+            sum += products(index).ListPrice
 
-        ' Display the average of all list prices
-        Console.WriteLine(
-            products.Average(Function(p) p.ListPrice).ToString("c"))
+            index += 1
+        Loop
 
-        ' Display the minimum of all list prices
-        Console.WriteLine(
-            products.Min(Function(p) p.ListPrice).ToString("c"))
-
-        ' Display the maximum of all list prices
-        Console.WriteLine(
-            products.Max(Function(p) p.ListPrice).ToString("c"))
+        Console.WriteLine("Sum: " + sum.ToString("c"))
 
         Console.ReadKey()
     End Sub

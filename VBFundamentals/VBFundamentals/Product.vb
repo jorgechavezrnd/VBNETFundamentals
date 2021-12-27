@@ -51,4 +51,8 @@
         Return sb.ToString()
     End Function
 
+    Public Overrides Function ToString() As String
+        Return Name + " (" + ProductNumber + ")"
+    End Function
+
 End Class
