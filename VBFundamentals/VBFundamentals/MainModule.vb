@@ -1,10 +1,12 @@
 ﻿Module MainModule
+#Const conLANGUAGE = "ENGLISH"
+    ' #Const conLANGUAGE = "GERMAN"
 
     Sub Main()
-#If DEBUG Then
-        Console.WriteLine("In DEBUG mode")
+#If conLANGUAGE = "ENGLISH" Then
+        Console.WriteLine("Good Morning Mr. Jones")
 #Else
-        Console.WriteLine("In RELEASE mode")
+        Console.WriteLine("Guten Morgen Herr Jones")
 #End If
 
         Console.ReadKey()
